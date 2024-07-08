@@ -9,6 +9,134 @@
     <link rel="stylesheet" href="style.css">
 <title>Resume</title>
 <style>
+    *{
+padding: 0;
+margin: 0;
+box-sizing: content-box;
+}
+body{
+    
+        height: 2000px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+:root{
+    --fname:"Margarine",san-serif;
+    --fname1:"Roboto",san-serif;
+    --fname2:"Inter",san-serif;
+    --fname3:"Satisfy",san-serif;
+
+   
+}
+.nav{
+    background-color: white;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    z-index: 90;
+    align-items: center;
+    border: 1px solid grey;
+    
+}
+.first .a1{
+    font-family: var(--fname2);
+    font-weight: 700;
+    font-size: 35px;
+
+}
+.first .a2{
+    font-family: var(--fname1);
+    
+    font-size: 25px;
+}
+.second{
+   display: grid;
+   grid-template-columns:  1fr;
+   
+}
+.second1{
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 100;
+}
+.second input{
+    visibility: hidden;
+}
+.second label,input{
+    visibility: hidden;
+    position: static;
+} 
+@media (min-width:400px){
+    .nav{
+       
+        height: fit-content;
+        position: static;
+    }
+    .second label{
+        visibility: visible;
+        cursor: pointer;
+        top:100px;
+        right: 100px;
+    }
+    .second1{
+        padding-bottom: 0px;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+       
+        
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-800px);
+        transition: all 0.25s ease;
+    }
+    .second1 .a{
+        transition: all 0.25s ease;
+    }
+    .second1 .a:hover{
+        padding: 50px 0px;
+      
+       
+        background-color: rgb(201, 193, 193);
+    }
+    .second1 label{
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        top: 0;
+        right: 25px;
+    }
+   
+    
+#check:checked ~ .second1{
+    background-color: white;
+    
+    transform: translateY(0);
+}
+}
+.second .a{
+    font-family: var(--fname2);
+}
+
+
+/*kila*/
+.pic p{
+ font: 19px var(--fname1);   
+}
+</style>
+<style>
 .container{
     height: 700px;
 display: grid;
@@ -79,7 +207,8 @@ height: 100%;
     border-radius: 255px;
     margin: 10px 15px;
     filter: grayscale(100%);
-
+    width:20px;
+    height:20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }

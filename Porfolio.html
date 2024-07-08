@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<title>Resume</title>
+<style>
+.container{
+    height: 700px;
+display: grid;
+grid-template-columns: 600px 1fr;    
+}
+.brown{
+    background-color:rgb(196, 178, 119);
+}
+.container{
+    position: relative;
+}
+.box{
+    position: absolute;
+   border-radius: 20px;
+   box-shadow: 2px 2px 25px rgb(0, 0, 0,0.5);
+    width: 500px;
+    height: 500px;
+    transform: translate(90%,20%);
+    display: flex;
+  
+    
+
+}
+.box .pic{
+    
+    border-radius: 25px 0px 0px 25px ;
+    background-color:rgb(223, 201, 129) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+width: 50%;
+height: 100%;
+}
+.box .pic img{
+
+    border-radius: 255px;
+    width: 75%;
+    
+    
+
+}
+.box .detail{
+    border-radius: 0px 25px 25px 0px ;
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+width: 50%;
+height: 100%;
+
+}
+
+.whitey{
+    
+    height: 10%;
+
+
+
+
+
+    background-color: white;
+    width: 100%;
+    display:flex;
+    text-align: center;
+
+}
+.whitey img{
+    border-radius: 255px;
+    margin: 10px 15px;
+    filter: grayscale(100%);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.whitey img:hover{
+    filter: grayscale(0%);
+    
+}
+
+@media (max-width:800px){
+    .box{
+    position: absolute;
+   
+    width: 420px;
+    height: 400px;
+    transform: translate(10%,10%);
+    display: flex;
+    }
+    .container{
+    height: 700px;
+display: grid;
+grid-template-columns: 1fr;    
+}
+.whitey{
+    
+    height: 10%;
+
+
+
+margin-bottom: 20px;
+    background-color: white;
+    width: 99%;
+    display:flex;
+    text-align: center;
+
+}
+
+}
+
+</style>
+<style>
+    .detail{
+        font: 25px var(--fname1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detail h1,h3,h4{
+        padding-bottom: 2px;
+        padding-top: 8px;
+        
+    }
+    .buttons{
+        margin-top: 50px;
+display: flex;
+flex-direction: column;
+     
+    }
+    .buttons button{
+        font: 15px var(--fname1);
+        color: white;
+        
+        margin-top: 25px;
+        width: 150px;
+        height: 30px;
+        border-radius: 25px;
+        border: 2px solid blue;
+        transition: all 0.2s ease;
+
+    }
+    .buttons button:nth-child(odd){
+        background-color: rgb(11, 7, 231);
+    }
+    .buttons button:nth-child(even){
+        border: 2px solid black;
+        color: black;
+    }
+    .buttons button:nth-child(odd):hover{
+        color: black;
+        background-color: white;
+    }
+    .buttons button:nth-child(even){
+        border: 2px solid black;
+        color: black;
+    }
+    .buttons button:nth-child(even):hover{
+        background-color: rgb(11, 7, 231);
+        color: white;
+        border: 2px solid blue;
+    }
+    .buttons svg{
+        margin-top: 50px;
+    }
+    @media (max-width:800px){
+       .buttons svg{
+        
+        margin-top: 20px;
+    }
+    }
+
+</style>
+</head>
+<body>
+    <div class="nav" id="s1">
+        <div class="first">
+        <a href="#" class="a1">ABBAS A</a>
+        <a href="#" class="a2">/ Student</a>
+    </div>
+   
+    <div class="second" id="s2">
+        
+        <input type="checkbox" id="check" name="chk">
+        <label for="check">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+       
+        <div class="second1">
+            <label for="check" style="font-weight: 500;">
+            <b>    X</b>
+            </label>
+        <div class="a" >ABOUT ME</div>
+        <div class="a">RESUME</div>
+        <div class="a">PROJECT</div>
+        <div class="a">CONTACT</div>
+         </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="brown">
+
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/1720455835858.jpg" alt="">
+            <p style="font-weight: 700; text-shadow: 1px 1px 0.2px black;" > ABBAS A</p>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-440v-80h560v80H200Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-440v-80h560v80H200Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M200-440v-80h560v80H200Z"/></svg></p>
+                <p style="color: black;display: flex;align-items: center;" >
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z"/></svg>  Student (Fresher)
+                </p>
+                <div class="whitey">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVjSgxxVpzzN_zWCBw9L7Kg9JLXPofaTJJw&s" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrni7mdpEyEl_6Qj_5TGl1FzaoEGMQcgvzg&s" alt="">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQusjFfQhqDNwkc--4U_3neOwlgNj6N_JWYKA&s" alt="">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="">
+                </div>
+        </div>
+        <div class="detail">
+            <div>
+            <h1 style="font-size: 49px;">Hello!</h1>
+            <h3>I am abbas</h3>
+            <h4>Here's who I am <br> what I do</h4>
+        </div>
+        <div class="buttons">
+            <button>RESUME</button>
+            <button>PROJECTS</button>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m722-607.33-36 32q-12 11-29.67 12-17.66 1-31.66-9.34-14-10.33-17.34-27.33-3.33-17 1.34-32l16.66-55.33-40-22.67q-14.66-8.33-19.5-23.67Q561-749 566-765.33q5-16.34 18-24.84t30.67-8.5h46l14-42.66q5.33-16.34 17.83-27.84 12.5-11.5 29.5-11.5t29.5 11.5q12.5 11.5 17.83 27.84l14 42.66h46q16.34 0 29.84 8.84 13.5 8.83 18.83 24.5 5.67 15.33.67 31.33-5 16-20 24L818-687.33 834.67-632q5.33 15.67 2 32.5-3.34 16.83-17.34 26.83-14.33 9.67-31.83 9-17.5-.66-29.5-11.66l-36-32Zm0-66.67q17 0 28.5-11.5T762-714q0-17-11.5-28.5T722-754q-17 0-28.5 11.5T682-714q0 17 11.5 28.5T722-674ZM536.67-235.33q22.33 56-15.34 105.66Q483.67-80 420-80q-32.33 0-59.5-16t-41.83-46.67Q246.33-134 191.5-188.5T142.67-316q-30-16.33-46.34-47.83Q80-395.33 80-427.33q0-65 49.83-99.17 49.84-34.17 111.5-7.5L302-509.33q18-35 50.67-55.17 32.66-20.17 71.33-22.17v-84.66h52.67v90q39.66 9 68.33 40.16 28.67 31.17 39 66.5h89.33v53.34h-84.66Q586-382.67 566.5-350T512-299.33l24.67 64ZM300-208q-2-27 2.83-54.5 4.84-27.5 14.5-53.5-25.66 13-53.5 16.5-27.83 3.5-55.83.17 1.33 35 29.5 63.16Q265.67-208 300-208Zm-74-156.67q37.33 0 75.17-17 37.83-17 60.83-31.66l-134.67-55.34Q201-480 173.83-466.83q-27.16 13.16-27.16 39.5 0 26 28 44.33T226-364.67Zm194 218q29 0 46.5-19.5t7.5-44.5l-58-148.66q-18.33 30-33.83 62.33t-15.5 74.33q0 24.34 13.5 50.17 13.5 25.83 39.83 25.83ZM485.33-362Q506-375.33 514-394.83t8-41.5q0-34-24-58.34Q474-519 440.33-519q-22 0-42.33 9.33-20.33 9.34-31.33 29.67l84 34.67L485.33-362Zm-168 46Z"/></svg>
+        </div>
+
+        </div>
+
+    </div>
+   
+
+    </div>
+</body>
+</html>
